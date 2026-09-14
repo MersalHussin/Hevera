@@ -90,7 +90,7 @@ export default function Header() {
           
           {/* Logo on the side */}
           <Link href="/" className="shrink-0 flex items-center justify-center">
-            <Image src="/images/Sensa.png" alt="Sensa Logo" width={140} height={50} className="object-contain h-10 md:h-12 w-auto" priority />
+            <Image src="/images/Havera.png" alt="Havera Logo" width={200} height={50} className="object-contain h-10 md:h-16 w-auto" priority />
           </Link>
 
           <nav className="hidden lg:flex items-center justify-center gap-7 lg:gap-9 flex-1 px-4" dir={isArabic ? "rtl" : "ltr"}>
@@ -197,7 +197,7 @@ export default function Header() {
           >
             {/* Header inside mobile menu to look consistent */}
             <div className="flex items-center justify-between h-20 py-4 border-b border-gray-100 bg-gray-50/50">
-              <Image src="/images/Sensa.png" alt="Sensa Logo" width={120} height={45} className="object-contain h-10 w-auto" />
+              <Image src="/images/Havera.png" alt="Havera Logo" width={120} height={45} className="object-contain h-10 w-auto" />
               <button
                 className="text-2xl text-gray-700 hover:text-main transition-colors p-2"
                 onClick={() => setIsOpen(false)}

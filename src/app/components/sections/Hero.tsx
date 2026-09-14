@@ -23,16 +23,7 @@ export default function Hero({ t, lang }: { t: any; lang: string }) {
           className={`flex flex-col justify-center ${isArabic ? 'lg:pl-10 text-right' : 'lg:pr-10 text-left'}`}
           dir={isArabic ? 'rtl' : 'ltr'}
         >
-          <div className="mb-6 flex">
-            <Image
-              src="/images/Sensa.png"
-              alt="Sensa Logo"
-              width={200}
-              height={70}
-              className="object-contain h-14 md:h-16 w-auto"
-              priority
-            />
-          </div>
+  
 
           <span className="text-main font-medium tracking-[0.25em] uppercase mb-6 text-xs md:text-sm flex items-center gap-3">
             <div className="w-8 h-[1px] bg-main/40" />
@@ -82,8 +73,8 @@ export default function Hero({ t, lang }: { t: any; lang: string }) {
             <div className="relative w-full h-full rounded-[2rem] overflow-hidden shadow-2xl">
               <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-1000 z-20 pointer-events-none" />
               <Image
-                src="/images/bgHero1.jpg"
-                alt="Sensa Premium Haircare"
+                src="/images/bgHero3.jpg"
+                alt="Havera Premium Haircare"
                 fill
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-[2s] ease-out"
                 priority

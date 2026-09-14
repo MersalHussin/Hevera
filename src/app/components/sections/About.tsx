@@ -49,7 +49,7 @@ export default function About({
               <div className="relative w-full h-full rounded-[1.5rem] overflow-hidden shadow-2xl">
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-700 z-20 pointer-events-none" />
                 <Image
-                  src="/images/sensaProducts.png"
+                  src="/images/About-image.png"
                   alt="Sensa Products"
                   width={800}
                   height={800}
