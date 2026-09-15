@@ -35,8 +35,9 @@ export default function Features({ t }: { t: any }) {
                 {/* Thin inner border for luxury feel */}
                 <div className="absolute inset-1.5 border border-main/5 rounded-[1.35rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
-                <div className="relative w-20 h-20 flex items-center justify-center mb-6 rounded-full bg-main/5 border border-main/10 group-hover:bg-main group-hover:border-main transition-all duration-700">
-                  <Icon size={30} className="text-main group-hover:text-white transition-colors duration-700 stroke-[1.5]" />
+                <div className="relative w-20 h-20 flex items-center justify-center mb-8 rounded-2xl bg-gradient-to-br from-main/10 to-transparent border border-main/20 group-hover:bg-main group-hover:scale-110 group-hover:shadow-[0_10px_30px_rgba(216,31,37,0.2)] transition-all duration-500 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-tr from-white/0 via-white/30 to-white/0 opacity-0 group-hover:opacity-100 group-hover:translate-x-full transition-all duration-1000 transform -skew-x-12 -translate-x-full" />
+                  <Icon size={34} className="text-main group-hover:text-white transition-colors duration-500 stroke-[1.5] relative z-10" />
                 </div>
                 <h3 className="text-xl font-semibold tracking-wide mb-3 text-gray-900 group-hover:text-main transition-colors duration-500">
                   {f.title}

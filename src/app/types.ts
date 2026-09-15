@@ -70,18 +70,18 @@ export const BRAND_UI: Record<
     badge: "bg-orange-500",
     logo: "/images/covix.png",
   },
-  "Sensa": {
+  "Hevera": {
     primary: "var(--main)",
     gradient: "from-[#d81f25] to-[#ef5d5e]",
     glow: "shadow-[#d81f25]/30",
     badge: "bg-[#d81f25]",
-    logo: "/images/Sensa.png",
+    logo: "/images/Hevera.png",
   },
   "Le Visage Plus": {
     primary: "var(--main)",
     gradient: "from-[#d81f25] to-[#ef5d5e]",
     glow: "shadow-[#d81f25]/30",
     badge: "bg-[#d81f25]",
-    logo: "/images/Sensa.png",
+    logo: "/images/Hevera.png",
   },
 };

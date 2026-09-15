@@ -1,16 +1,16 @@
 export const translations: any = {
   en: {
     dir: "ltr",
-    brandName: "Sensa",
-    heroTitle: "Premium Hair Care & Beauty Solutions",
+    brandName: "Hevera",
+    heroTitle: "Advanced Clinical Hair & Scalp Solutions",
     heroSubtitle:
-      "Advanced hair care crafted with precision, safety, and innovation for stronger, healthier hair.",
+      "Precision-engineered formulations backed by German dermatological expertise. We deliver targeted, medical-grade treatments for optimal scalp health and hair vitality.",
     heroCta: "Explore Services",
 
     whoTitle: "Who We Are",
-    whoText: `Sensa is a Saudi brand specializing in advanced hair care products like shampoos, conditioners, and treatments. We are part of the Bonn Medical Industries ecosystem, operating under a license from Germany's KOLN Naturstoffe. We develop targeted formulations to address real hair and scalp concerns - not generic products, but precise solutions for every case. Each product is crafted with global medical standards, rigorous testing, and full transparency.`,
+    whoText: `Hevera is a Saudi brand specializing in advanced hair care products like shampoos, conditioners, and treatments. We are part of the Bonn Medical Industries ecosystem, operating under a license from Germany's KOLN Naturstoffe. We develop targeted formulations to address real hair and scalp concerns - not generic products, but precise solutions for every case. Each product is crafted with global medical standards, rigorous testing, and full transparency.`,
 
-    featuresTitle: "Why Sensa",
+    featuresTitle: "Why Hevera",
     features: [
       {
         title: "Global Standards",
@@ -61,9 +61,9 @@ export const translations: any = {
 
     ctaTitle: "Ready to feel the difference?",
     ctaBtn: "Browse Products",
-    partTitle: "Part of BON SENSA",
+    partTitle: "Part of BON HEVERA",
     partText:
-      "Not a separate brand, but an integral part of BON Medical Industries' SENSA system.",
+      "Not a separate brand, but an integral part of BON Medical Industries' HEVERA system.",
     partList: [
       "Internationally accredited with 150 medical infrastructures, modern laboratories, and advanced equipment.",
       "Specialized and experienced team including chemical engineers, dermatology experts, and consulting specialists.",
@@ -72,9 +72,9 @@ export const translations: any = {
       "Comprehensive documentation for every batch with certificates and test reports.",
       "Continuous support from marketing, customer service, and logistics teams.",
     ],
-    whyTitle: "Why Choose SENSA",
+    whyTitle: "Why Choose HEVERA",
     whyList: [
-      "Choose SENSA when you want a brand with a strong reputation backed by real medical expertise.",
+      "Choose HEVERA when you want a brand with a strong reputation backed by real medical expertise.",
       "Guaranteed quality from an internationally certified manufacturer.",
       "Transparency and reliability unmatched in the market.",
       "Professional support from a specialized and experienced team.",
@@ -135,17 +135,17 @@ export const translations: any = {
 
   ar: {
     dir: "rtl",
-    brandName: "سينسا",
-    heroTitle: "حلول متقدمة للعناية بالشعر وجماله",
+    brandName: "هافيرا",
+    heroTitle: "حلول احترافية متقدمة للعناية بالشعر",
     heroSubtitle:
-      "منتجات عناية متطورة تجمع بين الأمان والابتكار للحصول على شعر صحي وقوي.",
+      "تركيبات متطورة مدعومة بخبرة ألمانية. نقدم لكِ رعاية فائقة تستهدف صحة فروة الرأس وتعيد الحيوية والقوة لشعرك بأعلى معايير الجودة العالمية.",
 
     heroCta: "استكشف الخدمات",
 
     whoTitle: "من نحن",
-    whoText: `سينسا هي علامة تجارية سعودية متخصصة في تصنيع منتجات العناية المتقدمة بالشعر مثل الشامبو والبلسم ومعالجات الشعر. نحن جزء من منظومة مصنع بون للصناعات الطبية، وتعمل تحت ترخيص من ألمانيا KOLN Naturstoffe. متخصصون في تطوير تركيبات محددة لحل مشاكل الشعر والفروة الفعلية—لا منتجات عامة، بل حلول دقيقة لكل حالة. كل منتج مصنوع بمعايير طبية عالمية، مع اختبارات صارمة وشفافية كاملة.`,
+    whoText: `هافيرا هي علامة تجارية سعودية متخصصة في تصنيع منتجات العناية المتقدمة بالشعر مثل الشامبو والبلسم ومعالجات الشعر. نحن جزء من منظومة مصنع بون للصناعات الطبية، وتعمل تحت ترخيص من ألمانيا KOLN Naturstoffe. متخصصون في تطوير تركيبات محددة لحل مشاكل الشعر والفروة الفعلية—لا منتجات عامة، بل حلول دقيقة لكل حالة. كل منتج مصنوع بمعايير طبية عالمية، مع اختبارات صارمة وشفافية كاملة.`,
 
-    featuresTitle: "لماذا سينسا",
+    featuresTitle: "لماذا هافيرا",
     features: [
       {
         title: "معايير عالمية",
@@ -196,9 +196,9 @@ export const translations: any = {
 
     ctaTitle: "جاهز لتجربة الفرق؟",
     ctaBtn: "تصفح المنتجات",
-    partTitle: "ضمن منظومة بون SENSA",
+    partTitle: "ضمن منظومة بون HEVERA",
     partText:
-      "ليست علامة منفصلة، بل جزء متكامل من مصنع بون للصناعات الطبية SENSA.",
+      "ليست علامة منفصلة، بل جزء متكامل من مصنع بون للصناعات الطبية HEVERA.",
     partList: [
       "معتمدة دولياً مع 150 بنية تحتية طبية عالمية، معامل حديثة، معدات متقدمة.",
       "فريق متخصص ومتمرس يشمل مهندسون كيميائيون، خبراء جلديين واستشاريون متخصصون.",
@@ -209,7 +209,7 @@ export const translations: any = {
     ],
     whyTitle: "النتيجة",
     whyList: [
-      "تختارون SENSA عندما تريدون علامة تجارية بسمعة قوية مدعومة بخبرة طبية حقيقية.",
+      "تختارون HEVERA عندما تريدون علامة تجارية بسمعة قوية مدعومة بخبرة طبية حقيقية.",
       "جودة مضمونة من مصنع معتمد دولياً.",
       "شفافية وموثوقية لا تجد مثلها في السوق.",
       "دعم احترافي من فريق متخصص وذو خبرة.",
@@ -268,3 +268,4 @@ export const translations: any = {
     }
   },
 };
+
