@@ -7,16 +7,16 @@ import MainWrapper from './components/sections/MainWrapper';
 import { Toaster } from 'sonner';
 
 export const metadata: Metadata = {
-  title: 'Sensa | سينسا',
-  description: 'Sensa - Premium Skincare & Cosmetics | سينسا - حلول متقدمة للعناية بالبشرة والجمال',
+  title: 'Havera | هافيرا',
+  description: 'Havera - Premium Hair Care & Cosmetics | هافيرا - حلول متقدمة للعناية بالشعر',
   icons: {
-    icon: '/images/Sensa.png',
-    apple: '/images/Sensa.png',
+    icon: '/images/Havera.png',
+    apple: '/images/Havera.png',
   },
   openGraph: {
-    title: 'Sensa | سينسا',
-    description: 'Sensa - Premium Skincare & Cosmetics | سينسا - حلول متقدمة للعناية بالبشرة والجمال',
-    images: [{ url: '/images/Sensa.png' }],
+    title: 'Havera | هافيرا',
+  description: 'Havera - Premium Hair Care & Cosmetics | هافيرا - حلول متقدمة للعناية بالشعر',
+    images: [{ url: '/images/Havera.png' }],
   },
 };
 
