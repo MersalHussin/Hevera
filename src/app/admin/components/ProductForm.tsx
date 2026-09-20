@@ -2,7 +2,7 @@
 
 import { useState, useTransition } from 'react';
 import { useRouter } from 'next/navigation';
-import { addSensaProduct, updateSensaProduct } from '@/app/actions/sensaProductActions';
+import { addSensaProduct, updateSensaProduct } from '@/app/actions/haveraProductActions';
 import Image from 'next/image';
 import { Upload, Link as LinkIcon, Trash, Info, ImageIcon, Star, Globe, Settings2, ShoppingCart } from 'lucide-react';
 import TagsInput from './TagsInput';

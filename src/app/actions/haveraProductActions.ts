@@ -97,7 +97,7 @@ export async function searchSensaProducts(query: string, limit: number = 5) {
     
     let dbQuery = supabaseServer
       .from('havera_products')
-      .select('id, name_en, name_ar, slug, images, description_en, description_ar, best_selling')
+      .select('id, name_en, name_ar, slug, images, description_en, description_ar, slogan_en, slogan_ar, best_selling')
       .or(`name_en.ilike.%${normalizedQuery}%,name_ar.ilike.%${normalizedQuery}%,description_en.ilike.%${normalizedQuery}%,description_ar.ilike.%${normalizedQuery}%`);
       
     if (limit > 0) {

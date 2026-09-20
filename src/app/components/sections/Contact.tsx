@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { FaPhoneAlt, FaEnvelope, FaCheck } from "react-icons/fa";
 import { submitContactMessage } from "../../actions/contactActions";
-import { getSensaProducts } from "../../actions/sensaProductActions";
+import { getSensaProducts } from "../../actions/haveraProductActions";
 import { Turnstile } from "@marsidev/react-turnstile";
 
 export default function Contact({ t, lang }: { t: any; lang: string }) {

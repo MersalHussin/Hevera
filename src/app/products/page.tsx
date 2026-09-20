@@ -1,4 +1,4 @@
-import { searchSensaProducts, getSensaProducts } from "../actions/sensaProductActions";
+import { searchSensaProducts, getSensaProducts } from "../actions/haveraProductActions";
 import ProductsClientPage from "./ProductsClientPage";
 
 // Depending on the Next.js version, searchParams can be an async promise or a plain object.

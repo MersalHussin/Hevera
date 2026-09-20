@@ -18,7 +18,7 @@ export default function SensaLogin() {
     setLoading(true);
     setError('');
 
-    if (email.toLowerCase() !== 'sensa@admin.com') {
+    if (email.toLowerCase() !== 'havera@admin.com') {
       setError('هذا البريد غير مصرح له بالدخول كمسؤول');
       setLoading(false);
       return;
@@ -41,7 +41,7 @@ export default function SensaLogin() {
     <div className="flex flex-col items-center justify-center min-h-[80vh] px-4" dir="rtl">
       
       <div className="mb-8 bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
-        <Image src="/images/Sensa.png" alt="Sensa" width={140} height={50} className="object-contain h-10 w-auto" />
+        <Image src="/images/Havera.png" alt="Havera" width={140} height={50} className="object-contain h-10 w-auto" />
       </div>
 
       <div className="bg-white p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] max-w-md w-full border border-gray-100 relative overflow-hidden">
@@ -73,7 +73,7 @@ export default function SensaLogin() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className="w-full pl-4 pr-12 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-main focus:bg-white transition-all placeholder:text-gray-400 text-left"
-                placeholder="sensa@admin.com"
+                placeholder="test@name.com"
                 dir="ltr"
               />
             </div>

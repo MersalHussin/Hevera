@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation';
 import ProductForm from '../../../components/ProductForm';
 import Link from 'next/link';
 import { ArrowRight, Edit3 } from 'lucide-react';
-import { getSensaProduct } from '@/app/actions/sensaProductActions';
+import { getSensaProduct } from '@/app/actions/haveraProductActions';
 
 export default function EditProductPage() {
   const params = useParams();

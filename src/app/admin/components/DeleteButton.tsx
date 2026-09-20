@@ -2,7 +2,7 @@
 
 import { Trash2 } from 'lucide-react';
 import { useTransition } from 'react';
-import { deleteSensaProduct } from '@/app/actions/sensaProductActions';
+import { deleteSensaProduct } from '@/app/actions/haveraProductActions';
 
 export default function DeleteButton({ id }: { id: string }) {
   const [isPending, startTransition] = useTransition();

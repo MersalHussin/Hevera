@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { getSensaProducts } from '@/app/actions/sensaProductActions';
+import { getSensaProducts } from '@/app/actions/haveraProductActions';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Edit, Plus, PackageSearch, PackageOpen, Tag, Box, Star } from 'lucide-react';

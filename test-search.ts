@@ -1,4 +1,4 @@
-import { searchSensaProducts, getSensaProducts } from './src/app/actions/sensaProductActions';
+import { searchSensaProducts, getSensaProducts } from './src/app/actions/haveraProductActions';
 
 async function main() {
   const products = await getSensaProducts();

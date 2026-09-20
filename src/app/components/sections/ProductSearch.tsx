@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { Search, X, Loader2 } from "lucide-react";
-import { searchSensaProducts } from "../../actions/sensaProductActions";
+import { searchSensaProducts } from "../../actions/haveraProductActions";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
