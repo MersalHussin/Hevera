@@ -5,19 +5,19 @@ import { supabase } from '@/app/lib/supabaseClient';
 import { User, Session } from '@supabase/supabase-js';
 import { useRouter, usePathname } from 'next/navigation';
 
-interface SensaAuthContextType {
+interface HaveraAuthContextType {
   user: User | null;
   session: Session | null;
   loading: boolean;
 }
 
-const SensaAuthContext = createContext<SensaAuthContextType>({
+const HaveraAuthContext = createContext<HaveraAuthContextType>({
   user: null,
   session: null,
   loading: true,
 });
 
-export const useSensaAuth = () => useContext(SensaAuthContext);
+export const useHaveraAuth = () => useContext(HaveraAuthContext);
 
 // Helper: wrap a promise with a timeout
 function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
@@ -29,7 +29,7 @@ function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
   ]);
 }
 
-export function SensaAuthProvider({ children }: { children: ReactNode }) {
+export function HaveraAuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
   const [loading, setLoading] = useState(true);
@@ -92,8 +92,8 @@ export function SensaAuthProvider({ children }: { children: ReactNode }) {
   }, [user, loading, pathname, router]);
 
   return (
-    <SensaAuthContext.Provider value={{ user, session, loading }}>
+    <HaveraAuthContext.Provider value={{ user, session, loading }}>
       {children}
-    </SensaAuthContext.Provider>
+    </HaveraAuthContext.Provider>
   );
 }

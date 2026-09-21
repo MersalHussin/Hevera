@@ -1,7 +1,7 @@
 'use client';
 
 import { ReactNode } from 'react';
-import { SensaAuthProvider, useSensaAuth } from './context/SensaAuthContext';
+import { HaveraAuthProvider, useHaveraAuth } from './context/HaveraAuthContext';
 import { supabase } from '@/app/lib/supabaseClient';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -10,7 +10,7 @@ import { usePathname } from 'next/navigation';
 
 
 function AdminShell({ children }: { children: ReactNode }) {
-  const { user, loading } = useSensaAuth();
+  const { user, loading } = useHaveraAuth();
   const pathname = usePathname();
 
   if (loading) {
@@ -168,10 +168,10 @@ function AdminShell({ children }: { children: ReactNode }) {
   );
 }
 
-export default function SensaAdminLayout({ children }: { children: ReactNode }) {
+export default function HaveraAdminLayout({ children }: { children: ReactNode }) {
   return (
-    <SensaAuthProvider>
+    <HaveraAuthProvider>
       <AdminShell>{children}</AdminShell>
-    </SensaAuthProvider>
+    </HaveraAuthProvider>
   );
 }
