@@ -38,20 +38,20 @@ export default function SensaLogin() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[80vh] px-4" dir="rtl">
+    <div className="flex flex-col items-center justify-center min-h-[80vh] px-4 font-sans" dir="rtl">
       
-      <div className="mb-8 bg-white p-4 rounded-2xl shadow-sm border border-gray-100">
+      <div className="mb-8 bg-white p-4 rounded-2xl shadow-sm border border-slate-100">
         <Image src="/images/Havera.png" alt="Havera" width={140} height={50} className="object-contain h-10 w-auto" />
       </div>
 
-      <div className="bg-white p-8 md:p-10 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] max-w-md w-full border border-gray-100 relative overflow-hidden">
+      <div className="bg-white p-8 md:p-10 rounded-3xl shadow-sm max-w-md w-full border border-slate-100 relative overflow-hidden">
         
         {/* Decorative background element */}
-        <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-main to-[#ef5d5e]"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-main to-red-400"></div>
 
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-extrabold text-gray-900 mb-2">تسجيل الدخول للإدارة</h1>
-          <p className="text-gray-500 text-sm">مرحباً بك مجدداً، يرجى إدخال بياناتك</p>
+          <h1 className="text-2xl font-extrabold text-slate-800 mb-2">تسجيل الدخول للإدارة</h1>
+          <p className="text-slate-500 text-sm">مرحباً بك مجدداً، يرجى إدخال بياناتك</p>
         </div>
 
         {error && (
@@ -62,34 +62,34 @@ export default function SensaLogin() {
         
         <form onSubmit={handleLogin} className="space-y-6">
           <div>
-            <label className="block text-gray-700 font-semibold mb-2 text-sm">البريد الإلكتروني</label>
+            <label className="block text-slate-700 font-semibold mb-2 text-sm">البريد الإلكتروني</label>
             <div className="relative">
               <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
-                <Mail size={18} className="text-gray-400" />
+                <Mail size={18} className="text-slate-400" />
               </div>
               <input
                 type="email"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full pl-4 pr-12 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-main focus:bg-white transition-all placeholder:text-gray-400 text-left"
+                className="w-full pl-4 pr-12 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-main focus:bg-white transition-all placeholder:text-slate-400 text-left text-slate-800"
                 placeholder="test@name.com"
                 dir="ltr"
               />
             </div>
           </div>
           <div>
-            <label className="block text-gray-700 font-semibold mb-2 text-sm">كلمة المرور</label>
+            <label className="block text-slate-700 font-semibold mb-2 text-sm">كلمة المرور</label>
             <div className="relative">
               <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
-                <Lock size={18} className="text-gray-400" />
+                <Lock size={18} className="text-slate-400" />
               </div>
               <input
                 type="password"
                 required
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full pl-4 pr-12 py-3.5 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-main focus:bg-white transition-all placeholder:text-gray-400 text-left"
+                className="w-full pl-4 pr-12 py-3.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-main focus:bg-white transition-all placeholder:text-slate-400 text-left text-slate-800"
                 placeholder="••••••••"
                 dir="ltr"
               />

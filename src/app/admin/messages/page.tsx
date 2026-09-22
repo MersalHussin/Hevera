@@ -53,63 +53,63 @@ export default function AdminMessagesPage() {
     <div className="max-w-7xl mx-auto space-y-8 p-6 md:p-10 min-h-screen" dir="rtl">
       
       {/* Luxury Header */}
-      <div className="relative overflow-hidden rounded-[1.5rem] bg-white border border-[#E8E2D9] shadow-[0_8px_30px_rgba(197,160,89,0.06)] p-8 md:p-10 z-10">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#C5A059]/10 to-transparent rounded-full blur-2xl opacity-60 -mr-10 -mt-10 pointer-events-none"></div>
+      <div className="relative overflow-hidden rounded-[1.5rem] bg-white border border-slate-200 shadow-sm p-8 md:p-10 z-10">
+        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-red-500/10 to-transparent rounded-full blur-2xl opacity-60 -mr-10 -mt-10 pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-40 h-40 bg-gradient-to-tr from-main/5 to-transparent rounded-full blur-3xl opacity-70 -ml-10 -mb-10 pointer-events-none"></div>
         
         <div className="flex flex-col sm:flex-row items-start justify-between gap-6 relative z-10">
           <div className="flex items-center gap-5">
-            <div className="bg-[#FDFBF7] border border-[#E8E2D9] p-4 rounded-2xl text-[#C5A059] shadow-sm">
+            <div className="bg-slate-50 border border-slate-200 p-4 rounded-2xl text-main shadow-sm">
               <MessageSquare size={32} strokeWidth={1.5} />
             </div>
             <div>
-              <p className="text-[11px] font-bold text-[#C5A059] uppercase tracking-[0.2em] mb-1.5">Communications</p>
-              <h1 className="text-3xl md:text-4xl font-bold text-[#2A3B32] tracking-tight">رسائل التواصل</h1>
+              <p className="text-[11px] font-bold text-main uppercase tracking-[0.2em] mb-1.5">Communications</p>
+              <h1 className="text-3xl md:text-4xl font-bold text-slate-800 tracking-tight">رسائل التواصل</h1>
             </div>
           </div>
-          <div className="bg-[#FDFBF7] border border-[#E8E2D9] px-6 py-3.5 rounded-xl shadow-sm text-center">
-            <span className="block text-2xl font-bold text-[#2A3B32]">{messages.length}</span>
-            <span className="block text-[10px] uppercase tracking-widest text-[#8C8374] font-bold mt-1">إجمالي الرسائل</span>
+          <div className="bg-slate-50 border border-slate-200 px-6 py-3.5 rounded-xl shadow-sm text-center">
+            <span className="block text-2xl font-bold text-slate-800">{messages.length}</span>
+            <span className="block text-[10px] uppercase tracking-widest text-slate-500 font-bold mt-1">إجمالي الرسائل</span>
           </div>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="bg-white rounded-[1.5rem] shadow-[0_8px_30px_rgba(197,160,89,0.06)] border border-[#E8E2D9] overflow-hidden">
+      <div className="bg-white rounded-[1.5rem] shadow-sm border border-slate-200 overflow-hidden">
         {loading ? (
           <div className="py-32 flex flex-col items-center justify-center gap-4">
-            <div className="animate-spin h-8 w-8 border-2 border-[#E8E2D9] border-t-[#C5A059] rounded-full"></div>
-            <p className="text-[#8C8374] text-xs font-bold uppercase tracking-widest">جاري التحميل</p>
+            <div className="animate-spin h-8 w-8 border-2 border-slate-200 border-t-[#C5A059] rounded-full"></div>
+            <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">جاري التحميل</p>
           </div>
         ) : error ? (
           <div className="py-24 text-center">
-            <p className="text-[#B44C4C] font-bold">{error}</p>
+            <p className="text-red-500 font-bold">{error}</p>
           </div>
         ) : messages.length === 0 ? (
           <div className="py-32 text-center bg-white flex flex-col items-center">
-            <Inbox size={48} className="text-[#E8E2D9] mb-4" strokeWidth={1} />
-            <p className="text-[#8C8374] font-bold text-lg">لا توجد رسائل حالياً</p>
+            <Inbox size={48} className="text-slate-200 mb-4" strokeWidth={1} />
+            <p className="text-slate-500 font-bold text-lg">لا توجد رسائل حالياً</p>
           </div>
         ) : (
           <>
             {/* Desktop Table View */}
             <div className="hidden md:block overflow-x-auto">
-              <table className="w-full text-right text-[#2A3B32] border-collapse">
+              <table className="w-full text-right text-slate-800 border-collapse">
                 <thead>
-                  <tr className="bg-[#FDFBF7] border-b border-[#E8E2D9]">
-                    <th className="py-5 px-6 text-[11px] font-bold text-[#8C8374] uppercase tracking-wider w-[180px]">الاسم / التاريخ</th>
-                    <th className="py-5 px-6 text-[11px] font-bold text-[#8C8374] uppercase tracking-wider w-[120px]">النوع</th>
-                    <th className="py-5 px-6 text-[11px] font-bold text-[#8C8374] uppercase tracking-wider w-[250px]">التواصل</th>
-                    <th className="py-5 px-6 text-[11px] font-bold text-[#8C8374] uppercase tracking-wider">الرسالة</th>
-                    <th className="py-5 px-6 text-[11px] font-bold text-[#8C8374] uppercase tracking-wider text-left w-[120px]">الإجراءات</th>
+                  <tr className="bg-slate-50 border-b border-slate-200">
+                    <th className="py-5 px-6 text-[11px] font-bold text-slate-500 uppercase tracking-wider w-[180px]">الاسم / التاريخ</th>
+                    <th className="py-5 px-6 text-[11px] font-bold text-slate-500 uppercase tracking-wider w-[120px]">النوع</th>
+                    <th className="py-5 px-6 text-[11px] font-bold text-slate-500 uppercase tracking-wider w-[250px]">التواصل</th>
+                    <th className="py-5 px-6 text-[11px] font-bold text-slate-500 uppercase tracking-wider">الرسالة</th>
+                    <th className="py-5 px-6 text-[11px] font-bold text-slate-500 uppercase tracking-wider text-left w-[120px]">الإجراءات</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#E8E2D9]">
                   {messages.map((msg) => (
-                    <tr key={msg.id} className="hover:bg-[#FDFBF7]/60 transition-colors group align-top">
+                    <tr key={msg.id} className="hover:bg-slate-50/60 transition-colors group align-top">
                       <td className="py-5 px-6">
-                        <div className="font-bold text-sm text-[#2A3B32] mb-1.5">{msg.name}</div>
-                        <div className="text-[10px] uppercase tracking-widest text-[#8C8374] font-bold border border-[#E8E2D9] px-2 py-0.5 rounded bg-white w-fit" dir="ltr">
+                        <div className="font-bold text-sm text-slate-800 mb-1.5">{msg.name}</div>
+                        <div className="text-[10px] uppercase tracking-widest text-slate-500 font-bold border border-slate-200 px-2 py-0.5 rounded bg-white w-fit" dir="ltr">
                           {new Date(msg.created_at).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}
                         </div>
                       </td>
@@ -117,18 +117,18 @@ export default function AdminMessagesPage() {
                       <td className="py-5 px-6">
                         {msg.contact_type === 'wholesale' ? (
                           <div className="flex flex-col gap-2">
-                            <span className="flex items-center gap-1 text-[#C5A059] bg-[#FDFBF7] border border-[#C5A059]/30 px-3 py-1.5 rounded-lg text-[10px] uppercase tracking-widest font-bold w-fit">
+                            <span className="flex items-center gap-1 text-main bg-slate-50 border border-main/30 px-3 py-1.5 rounded-lg text-[10px] uppercase tracking-widest font-bold w-fit">
                               <Package size={12} />
                               طلب جملة
                             </span>
                             {msg.product_name && (
-                              <div className="text-xs font-bold text-[#5C6B61] max-w-[150px] truncate" title={msg.product_name}>
+                              <div className="text-xs font-bold text-slate-600 max-w-[150px] truncate" title={msg.product_name}>
                                 {msg.product_name}
                               </div>
                             )}
                           </div>
                         ) : (
-                          <span className="flex items-center gap-1 text-[#8C8374] bg-[#FDFBF7] border border-[#E8E2D9] px-3 py-1.5 rounded-lg text-[10px] uppercase tracking-widest font-bold w-fit">
+                          <span className="flex items-center gap-1 text-slate-500 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-lg text-[10px] uppercase tracking-widest font-bold w-fit">
                             <MessageSquare size={12} />
                             استفسار
                           </span>
@@ -137,17 +137,17 @@ export default function AdminMessagesPage() {
                       
                       <td className="py-5 px-6 space-y-1.5">
                         <div className="flex items-center gap-2">
-                          <span className="text-[10px] font-bold text-[#8C8374] uppercase tracking-widest w-8">TEL</span>
-                          <a href={`tel:${msg.phone}`} className="text-xs font-bold text-[#5C6B61] hover:text-main transition-colors" dir="ltr">{msg.phone}</a>
+                          <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest w-8">TEL</span>
+                          <a href={`tel:${msg.phone}`} className="text-xs font-bold text-slate-600 hover:text-main transition-colors" dir="ltr">{msg.phone}</a>
                         </div>
                         <div className="flex items-center gap-2">
-                          <span className="text-[10px] font-bold text-[#8C8374] uppercase tracking-widest w-8">MAIL</span>
-                          <a href={`mailto:${msg.email}`} className="text-xs font-bold text-[#5C6B61] hover:text-main transition-colors truncate max-w-[150px] block" title={msg.email}>{msg.email}</a>
+                          <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest w-8">MAIL</span>
+                          <a href={`mailto:${msg.email}`} className="text-xs font-bold text-slate-600 hover:text-main transition-colors truncate max-w-[150px] block" title={msg.email}>{msg.email}</a>
                         </div>
                       </td>
                       
                       <td className="py-5 px-6">
-                        <div className="text-xs text-[#5C6B61] leading-relaxed line-clamp-2 bg-[#FDFBF7] p-3 rounded-xl border border-[#E8E2D9]">
+                        <div className="text-xs text-slate-600 leading-relaxed line-clamp-2 bg-slate-50 p-3 rounded-xl border border-slate-200">
                           {msg.message}
                         </div>
                       </td>
@@ -171,19 +171,19 @@ export default function AdminMessagesPage() {
                 <div key={msg.id} className="p-4 bg-white flex flex-col gap-3 relative">
                   <div className="flex justify-between items-start gap-2">
                     <div>
-                      <div className="font-bold text-sm text-[#2A3B32] mb-1.5">{msg.name}</div>
-                      <div className="text-[9px] uppercase tracking-widest text-[#8C8374] font-bold border border-[#E8E2D9] px-2 py-0.5 rounded bg-[#FDFBF7] w-fit" dir="ltr">
+                      <div className="font-bold text-sm text-slate-800 mb-1.5">{msg.name}</div>
+                      <div className="text-[9px] uppercase tracking-widest text-slate-500 font-bold border border-slate-200 px-2 py-0.5 rounded bg-slate-50 w-fit" dir="ltr">
                         {new Date(msg.created_at).toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}
                       </div>
                     </div>
                     <div>
                       {msg.contact_type === 'wholesale' ? (
-                        <span className="flex items-center gap-1 text-[#C5A059] bg-[#FDFBF7] border border-[#C5A059]/30 px-2 py-1 rounded-lg text-[9px] uppercase tracking-widest font-bold">
+                        <span className="flex items-center gap-1 text-main bg-slate-50 border border-main/30 px-2 py-1 rounded-lg text-[9px] uppercase tracking-widest font-bold">
                           <Package size={10} />
                           طلب جملة
                         </span>
                       ) : (
-                        <span className="flex items-center gap-1 text-[#8C8374] bg-[#FDFBF7] border border-[#E8E2D9] px-2 py-1 rounded-lg text-[9px] uppercase tracking-widest font-bold">
+                        <span className="flex items-center gap-1 text-slate-500 bg-slate-50 border border-slate-200 px-2 py-1 rounded-lg text-[9px] uppercase tracking-widest font-bold">
                           <MessageSquare size={10} />
                           استفسار
                         </span>
@@ -192,12 +192,12 @@ export default function AdminMessagesPage() {
                   </div>
 
                   {msg.contact_type === 'wholesale' && msg.product_name && (
-                    <div className="text-[10px] font-bold text-[#5C6B61] truncate bg-[#FDFBF7] px-2 py-1 rounded border border-[#E8E2D9] inline-block w-fit">
+                    <div className="text-[10px] font-bold text-slate-600 truncate bg-slate-50 px-2 py-1 rounded border border-slate-200 inline-block w-fit">
                       {msg.product_name}
                     </div>
                   )}
 
-                  <div className="text-xs text-[#5C6B61] leading-relaxed line-clamp-2 bg-[#FDFBF7] p-3 rounded-xl border border-[#E8E2D9]">
+                  <div className="text-xs text-slate-600 leading-relaxed line-clamp-2 bg-slate-50 p-3 rounded-xl border border-slate-200">
                     {msg.message}
                   </div>
                   
@@ -220,11 +220,11 @@ export default function AdminMessagesPage() {
       {/* Modal */}
       {selectedMessage && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-[#2A3B32]/40 backdrop-blur-sm" dir="rtl">
-          <div className="bg-white rounded-2xl w-full max-w-2xl border border-[#E8E2D9] shadow-2xl animate-in fade-in zoom-in-95 duration-200 overflow-hidden">
-            <div className="px-8 py-6 border-b border-[#E8E2D9] flex items-center justify-between bg-[#FDFBF7]">
-              <h2 className="text-xl font-bold text-[#2A3B32] flex items-center gap-3">
+          <div className="bg-white rounded-2xl w-full max-w-2xl border border-slate-200 shadow-2xl animate-in fade-in zoom-in-95 duration-200 overflow-hidden">
+            <div className="px-8 py-6 border-b border-slate-200 flex items-center justify-between bg-slate-50">
+              <h2 className="text-xl font-bold text-slate-800 flex items-center gap-3">
                 {selectedMessage.contact_type === 'wholesale' ? (
-                  <span className="text-[#C5A059]"><Package size={24} /></span>
+                  <span className="text-main"><Package size={24} /></span>
                 ) : (
                   <span className="text-main"><MessageSquare size={24} /></span>
                 )}
@@ -235,13 +235,13 @@ export default function AdminMessagesPage() {
                   onClick={() => handleDelete(selectedMessage.id)}
                   disabled={isDeleting}
                   title="حذف الرسالة"
-                  className="text-[#8C8374] hover:text-white hover:bg-[#B44C4C] transition-colors bg-white w-8 h-8 rounded-full border border-[#E8E2D9] flex items-center justify-center shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="text-slate-500 hover:text-white hover:bg-red-500 transition-colors bg-white w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Trash2 size={16} strokeWidth={2} />
                 </button>
                 <button 
                   onClick={() => setSelectedMessage(null)}
-                  className="text-[#8C8374] hover:text-[#B44C4C] transition-colors bg-white w-8 h-8 rounded-full border border-[#E8E2D9] flex items-center justify-center shadow-sm"
+                  className="text-slate-500 hover:text-red-500 transition-colors bg-white w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center shadow-sm"
                 >
                   <X size={18} strokeWidth={2} />
                 </button>
@@ -251,32 +251,32 @@ export default function AdminMessagesPage() {
             <div className="p-8 space-y-8">
               <div className="grid grid-cols-2 gap-6">
                 <div>
-                  <div className="text-[10px] font-bold text-[#8C8374] uppercase tracking-widest mb-1.5">المرسل</div>
-                  <div className="text-sm font-bold text-[#2A3B32]">{selectedMessage.name}</div>
+                  <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1.5">المرسل</div>
+                  <div className="text-sm font-bold text-slate-800">{selectedMessage.name}</div>
                 </div>
                 <div>
-                  <div className="text-[10px] font-bold text-[#8C8374] uppercase tracking-widest mb-1.5">التاريخ</div>
-                  <div className="text-sm font-bold text-[#2A3B32]" dir="ltr">
+                  <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1.5">التاريخ</div>
+                  <div className="text-sm font-bold text-slate-800" dir="ltr">
                     {new Date(selectedMessage.created_at).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })}
                   </div>
                 </div>
                 {selectedMessage.contact_type === 'wholesale' && selectedMessage.product_name && (
-                  <div className="col-span-2 bg-[#FDFBF7] border border-[#E8E2D9] p-4 rounded-xl">
-                    <div className="text-[10px] font-bold text-[#8C8374] uppercase tracking-widest mb-1.5">المنتج المطلوب (جملة)</div>
-                    <div className="text-sm font-bold text-[#2A3B32]">{selectedMessage.product_name}</div>
+                  <div className="col-span-2 bg-slate-50 border border-slate-200 p-4 rounded-xl">
+                    <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-1.5">المنتج المطلوب (جملة)</div>
+                    <div className="text-sm font-bold text-slate-800">{selectedMessage.product_name}</div>
                   </div>
                 )}
               </div>
 
               <div>
-                <div className="text-[10px] font-bold text-[#8C8374] uppercase tracking-widest mb-3">محتوى الرسالة</div>
-                <div className="text-sm text-[#5C6B61] leading-relaxed bg-[#FDFBF7] p-5 rounded-xl border border-[#E8E2D9] whitespace-pre-wrap">
+                <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-3">محتوى الرسالة</div>
+                <div className="text-sm text-slate-600 leading-relaxed bg-slate-50 p-5 rounded-xl border border-slate-200 whitespace-pre-wrap">
                   {selectedMessage.message}
                 </div>
               </div>
 
-              <div className="border-t border-[#E8E2D9] pt-6">
-                <div className="text-[10px] font-bold text-[#8C8374] uppercase tracking-widest mb-4">الرد على العميل</div>
+              <div className="border-t border-slate-200 pt-6">
+                <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-4">الرد على العميل</div>
                 <div className="flex gap-4">
                   <a 
                     href={`https://wa.me/${selectedMessage.phone.replace(/[^0-9]/g, '')}`} 
